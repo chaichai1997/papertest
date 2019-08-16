@@ -3,7 +3,7 @@ from numpy import *
 import seaborn as sns 
 import matplotlib.pyplot as plt
 
-f = open('F:\\zhang\\papertest\\naoduxx.csv')
+f = open('F:\\zhang\\papertest\\test.csv')
 data = pd.read_csv(f, header=None)  # len(data) 4153 len(columns) 22
 # test = data.iloc[3114:3138, :9]
 
@@ -57,6 +57,5 @@ def ShowGRAHeatMap(DataFrame):
 
 
 if __name__ == '__main__':
-    dataframe = data.iloc[3114:3138, :9]
-    data_gra = GRA(dataframe)
+    data_gra = GRA(data)
     ShowGRAHeatMap(data_gra)
