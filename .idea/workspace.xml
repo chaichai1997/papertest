@@ -4,8 +4,8 @@
     <list default="true" id="a1977479-2aa8-4be0-b6f6-e7e3a5aac28c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gray_cor.py" beforeDir="false" afterPath="$PROJECT_DIR$/gray_cor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/origialdata.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/readdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.readdata">
+  <component name="RunManager" selected="Python.gray_cor">
     <configuration name="gray_cor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="papertest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.readdata" />
         <item itemvalue="Python.gray_cor" />
+        <item itemvalue="Python.readdata" />
       </list>
     </recent_temporary>
   </component>

@@ -3,7 +3,7 @@ from numpy import *
 import seaborn as sns 
 import matplotlib.pyplot as plt
 
-f = open('F:\\zhang\\papertest\\naoduxx.csv')
+f = open('F:\\zhang\\papertest\\data.csv')
 data = pd.read_csv(f, header=None)  # len(data) 4153 len(columns) 22
 print(len(data.columns))
 
@@ -39,19 +39,25 @@ def GRA_ONE(DataFrame, m=0):
 
 
 def GRA(DataFrame):
-    DataFrame = DataFrame.iloc[:24,]
-    list_columns = [str(s) for s in range(len(DataFrame.columns)) if s not in [None]]
-    df_local = pd.DataFrame(columns=list_columns)
-    for i in range(len(DataFrame.columns)):
-        df_local.iloc[:, i] = GRA_ONE(DataFrame, m=i)[0]
-    df_local.to_csv("result.csv", index=False, header=False)
+    ds = 0
+    df = 24
+    while df < len(DataFrame):
+        data = DataFrame.iloc[ds:df, ]
+        data.index = [i for i in range(24)]
+        list_columns = [str(s) for s in range(len(data.columns)) if s not in [None]]
+        df_local = pd.DataFrame(columns=list_columns)
+        for i in range(len(data.columns)):
+            df_local.iloc[:, i] = GRA_ONE(data, m=i)[0]
+        df_local.to_csv("result.csv", index=False, header=False, mode='a')
+        ds += 24
+        df += 24
     return df_local
 
 
 # 灰色关联结果矩阵可视化
 def ShowGRAHeatMap(DataFrame):
     colormap = plt.cm.RdBu
-    plt.figure(figsize=(8,4))
+    plt.figure(figsize=(16, 8))
     plt.title('Gray Correlation of Features', y=1, size=15)
     sns.heatmap(DataFrame.astype(float), linewidths=0.1, vmax=1.0, square=True, cmap=colormap,
                 linecolor='white', annot=True)
@@ -60,4 +66,4 @@ def ShowGRAHeatMap(DataFrame):
 
 if __name__ == '__main__':
     data_gra = GRA(data)
-    ShowGRAHeatMap(data_gra)
+    # ShowGRAHeatMap(data_gra)
