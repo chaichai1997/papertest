@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 f = open('F:\\zhang\\papertest\\naoduxx.csv')
 data = pd.read_csv(f, header=None)  # len(data) 4153 len(columns) 22
+print(len(data.columns))
 
 
 def GRA_ONE(DataFrame, m=0):
@@ -38,11 +39,12 @@ def GRA_ONE(DataFrame, m=0):
 
 
 def GRA(DataFrame):
-    DataFrame = pd.DataFrame(DataFrame.iloc[3114:3138, :9])
+    DataFrame = DataFrame.iloc[:24,]
     list_columns = [str(s) for s in range(len(DataFrame.columns)) if s not in [None]]
     df_local = pd.DataFrame(columns=list_columns)
     for i in range(len(DataFrame.columns)):
         df_local.iloc[:, i] = GRA_ONE(DataFrame, m=i)[0]
+    df_local.to_csv("result.csv", index=False, header=False)
     return df_local
 
 
