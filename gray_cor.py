@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 f = open('F:\\zhang\\papertest\\data.csv')
 data = pd.read_csv(f, header=None)  # len(data) 4153 len(columns) 22
-print(len(data.columns))
 
 
 def GRA_ONE(DataFrame, m=0):
@@ -25,7 +24,7 @@ def GRA_ONE(DataFrame, m=0):
     c = amax(a)
     d = amin(a)   # 计算值
     result = zeros([m, n])
-    
+
     for i in range(m):
         for j in range(n):
             result[i, j] = (d+0.5*c)/(a[i, j]+0.5*c)   # 分辨系数0.5
@@ -51,6 +50,7 @@ def GRA(DataFrame):
         df_local.to_csv("result.csv", index=False, header=False, mode='a')
         ds += 24
         df += 24
+        # ShowGRAHeatMap(df_local)
     return df_local
 
 
