@@ -36,7 +36,7 @@ while df < len(data):
     b = []
     r = []
     for i in range(len(DF)):
-        d = (DF.iloc[i, s[i][0]]+DF.iloc[i, s[i][1]]+DF.iloc[i, s[i][2]]+DF.iloc[i, s[i][3]])/4
+        d = (DF.iloc[i, s[i][1]]+DF.iloc[i, s[i][2]]+DF.iloc[i, s[i][3]])/3
         b.append(d)
         if d > 0.8:
             r.append('111')
