@@ -41,9 +41,9 @@ while df < len(data):
         if d > 0.8:
             r.append('111')
         elif 0.6 < d <= 0.8:
-            r.append('100')
+            r.append('110')
         else:
-            r.append('000')
+            r.append('100')
     a1.append(b)
     a2.append(r)
     ds += 18
