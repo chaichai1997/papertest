@@ -39,11 +39,11 @@ while df < len(data):
         d = (DF.iloc[i, s[i][1]]+DF.iloc[i, s[i][2]]+DF.iloc[i, s[i][3]])/3
         b.append(d)
         if d > 0.8:
-            r.append('111')
-        elif 0.6 < d <= 0.8:
-            r.append('110')
-        else:
             r.append('100')
+        elif 0.6 < d <= 0.8:
+            r.append('010')
+        else:
+            r.append('001')
     a1.append(b)
     a2.append(r)
     ds += 18
