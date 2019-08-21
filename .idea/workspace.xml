@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1977479-2aa8-4be0-b6f6-e7e3a5aac28c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DBN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deal_gray.py" beforeDir="false" afterPath="$PROJECT_DIR$/deal_gray.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deal_gray_result.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/label.csv" beforeDir="false" />
@@ -31,7 +30,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/deep learning/code" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3137931" />
@@ -58,6 +57,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.readdata">
+    <configuration name="DNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="papertest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DNN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="deal_gray" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="papertest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,6 +166,7 @@
       <list>
         <item itemvalue="Python.readdata" />
         <item itemvalue="Python.deal_gray" />
+        <item itemvalue="Python.DNN" />
         <item itemvalue="Python.gray_cor" />
         <item itemvalue="Python.test" />
       </list>

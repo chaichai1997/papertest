@@ -8,15 +8,23 @@ from numpy import *
 f2 = open('F:\\zhang\\papertest\\label.csv')
 y = pd.read_csv(f2, header=None, dtype=object)
 a = []
+b = []
 for i in range(169):   # 共169条数据
     y_i = y.iloc[i]    # 获取每一行
-    for j in y_i:
-        a.append(j)    # 读取每行中元素，生成列表
-data = pd.DataFrame(a)
+    for j in y_i:   # 读取每行中元素，生成列表
+        print(j)
+        if j == '0':
+            a = [1, 0, 0]
+        elif j == '1':
+            a = [0, 1, 0]
+        elif j == '2':
+            a = [0, 0, 1]
+        b.append(a)
+data = pd.DataFrame(b)
 data.to_csv("y.csv", index=False, header=False, mode='a')  # 写入文件
 
 """
-
+将x写入x.CSV文件
 """
 # f1 = open('F:\\zhang\\papertest\\data.csv')
 # x = pd.read_csv(f1, header=None)
