@@ -4,11 +4,6 @@
     <list default="true" id="a1977479-2aa8-4be0-b6f6-e7e3a5aac28c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deal_gray.py" beforeDir="false" afterPath="$PROJECT_DIR$/deal_gray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deal_gray_result.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/label.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/readdata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/y.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.readdata">
+  <component name="RunManager" selected="Python.DNN">
     <configuration name="DNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="papertest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,9 +159,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DNN" />
         <item itemvalue="Python.readdata" />
         <item itemvalue="Python.deal_gray" />
-        <item itemvalue="Python.DNN" />
         <item itemvalue="Python.gray_cor" />
         <item itemvalue="Python.test" />
       </list>

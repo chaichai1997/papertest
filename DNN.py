@@ -11,13 +11,30 @@ import pandas as pd
 数据处理
 """
 f1 = open('F:\\zhang\\papertest\\x.csv')
-x = pd.read_csv(f1, header=None, dtype=object)
+x = pd.read_csv(f1, header=None)
 f2 = open('F:\\zhang\\papertest\\y.csv')
-y = pd.read_csv(f2, header=None, dtype=object)
+y = pd.read_csv(f2, header=None)
 train_data = np.array(x.iloc[:2000])
 train_label = np.array(y.iloc[:2000])
+train_label = np.asarray(train_label).astype('float32')
 validation_data = np.array(x.iloc[2000:2500])
 validation_label = np.array(y.iloc[2000:2500])
+validation_label = np.asarray(validation_label).astype('float32')
+test_data = np.array(x.iloc[2500:])
+test_label = np.array(x.iloc[2500:])
+test_data = np.asarray(test_data).astype('float32')
+
+"""
+数据标准化
+"""
+mean = train_data.mean(axis=0)
+train_data -= mean
+std = train_data.std(axis=0)
+train_data /= std
+test_data -= mean
+test_data /= std
+validation_data -= mean
+validation_data /= std
 
 
 """
@@ -43,8 +60,8 @@ model.compile(
 history = model.fit(
     train_data,
     train_label,
-    epochs=20,
-    batch_size=512,
+    epochs=100,
+    batch_size=32,
     validation_data=(validation_data, validation_label)
 )
 """
