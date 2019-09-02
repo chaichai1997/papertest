@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 f = open('F:\\zhang\\papertest\\data.csv')
 data = pd.read_csv(f, header=None)  # len(data) 4153 len(columns) 22
+data = data.sample(frac=1.0)
 
 
 def GRA_ONE(DataFrame, m=0):
